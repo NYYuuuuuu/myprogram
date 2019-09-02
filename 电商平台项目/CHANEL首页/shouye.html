@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHANEL首页</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="header">
+        <b>
+            <p id="head">CHANEL</p>
+        </b>
+    </div>
+    <div id="middle">
+        <div id="middle-imgs">
+            <div class="mimgs actived">
+                <img src="imgs/gaojidingzhi.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/jingpin.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/gaojizhubao.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/WATCH.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/INSIDE.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/xiangshui.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/caizhuang.jpg" alt="">
+            </div>
+            <div class="mimgs">
+                <img src="imgs/hufupin.jpg" alt="">
+            </div>
+        </div>
+        <ul class="navigate">
+            <li class="selected nav "><a href="" class="first">精品</a> </li>
+            <li class="nav "><a href="" class="first">高级珠宝</a></li>
+            <li class="nav "><a href="" class="first">腕表</a></li>
+            <li class="nav "><a href="" class="first">INSIDE CHANEL</a></li><br>
+            <li class="nav"><a href="">香水</a></li>
+            <li class="nav"><a href="../CHANEL彩妆/caizhuang.html">彩妆</a></li>
+            <li class="nav"><a href="">护肤品</a></li>
+        </ul>
+        <div id="sign">
+            <p id="text">- <a href="">线上香水与美容品专门店</a>  -</p>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        jQuery(function () {
+            $(".navigate li").mouseenter(function () {
+                $("#middle-imgs .mimgs").eq($(this).index()).show().siblings("div").hide();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

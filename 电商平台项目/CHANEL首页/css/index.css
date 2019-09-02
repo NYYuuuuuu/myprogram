@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    font-family: abchanel-couture, "华文细黑", STXiHei, "微软雅黑", "Microsoft Yahei", "华文黑体", "ST Heiti", "MS黑体", "MS Hei", abchanel-couture, Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+    height: 50px;
+}
+#head{
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+#middle{
+    height: 431px;
+    width: 776px;
+    margin: 0 auto;
+    position: relative;
+}
+#middle #middle-imgs{
+    height: 431px;
+    width: 776px;
+    position: absolute;
+}
+#middle #middle-imgs div{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height: 431px;
+    transition: opacity 2s ease;
+    display: none;
+}
+#middle #middle-imgs img{
+    position: absolute;
+    height: 431px;
+    width: 776px;
+    
+}
+#middle #middle-imgs .actived{
+    display: block
+}
+.navigate{
+    height:100px;
+    width:600px;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 14px;
+    top:500px;
+    left: 100px;
+}
+.navigate li{
+    float: left;
+    text-align: center;
+    /* margin: 0 auto; */
+    line-height: 50px;
+    margin-left: 80px;
+}
+.navigate a,#middle #sign a{
+    color: #767676;
+}
+.navigate a:hover{
+    color:#000;
+}
+#middle #sign{
+    position: absolute; 
+    margin: 0 auto;
+    width: 800px;
+    top: 600px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15px;
+    /* text-align: center; */
+}
+#middle #sign #text{
+    text-align: center;
+    /* color: #767676; */
+}
+#middle #sign a:hover{
+    color: #000;
+}
