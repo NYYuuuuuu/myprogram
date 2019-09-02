@@ -1,0 +1,550 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    font-family: abchanel-couture, "华文细黑", STXiHei, "微软雅黑", "Microsoft Yahei", "华文黑体", "ST Heiti", "MS黑体", "MS Hei", abchanel-couture, Arial, Helvetica, sans-serif;
+    /* height: 2000px; */
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+#header #header-black{
+    /* position: sticky;
+    top: 0%; */
+    width: 100%;
+    height: 8px;
+    background: #000000;
+}
+#header #header-middle{
+    /* float: left; */
+    margin-top: 5px;
+}
+#header-middle #middle-text{
+    width: 850px;
+    height: 80px;
+    float: left;
+    font-size: 40px;
+    text-align: right;
+    /* padding-left: 400px; */
+    line-height: 80px;
+}
+#header-middle #middle-font{
+    float: left;
+    height: 80px;
+    /* width: 800px; */
+    margin-left: 400px;
+}
+#middle-font .iconfont{
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    /* text-align: right; */
+    margin-left: 15px;
+    /* cursor: pointer; */
+}
+#middle-font .triangle{
+    position: relative;
+    
+}
+#middle-font .triangle::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-color:  transparent transparent #fff transparent ;
+    position: absolute;
+    top: 80%;
+    margin-top: -1.5px;
+    right: 4px;
+    z-index: 99;
+    display: none;
+}
+#middle-font .triangle:hover::after,#middle-font .triangle:hover #register{
+    display: block;
+}
+#middle-font #register{
+    width: 300px;
+    /* height: 300px; */
+    /* border: #000 1px solid; */
+    /* -moz-box-shadow: 0 0 5px #aaa; */
+    background: #ffffff;
+    position: absolute;
+    top: 95%;
+    left: -600%;
+    box-shadow: 0 -1px 9px 1px rgba(159,159,159,0.5);
+    z-index: 99;
+    display: none;
+}
+#middle-font #register #log-in-text{
+    margin-top: -10px;
+    height: 30px;
+    font-size: 12px;
+}
+#middle-font #register #log-in{
+    width: 252px;
+    /* margin: 0 auto; */
+    margin-left: 30px;
+}
+#register #log-in #user,#register #log-in #password,#register #register-btn{
+    width: 250px;
+    height: 40px;
+    /* top: -50px; */
+}
+#middle-font #register #register-btn{
+    margin-left: 30px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+#middle-font #register .register-text{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -10px;
+    color: #808080;
+    text-decoration: underline;
+}
+#middle-font #register .sign-in{
+    margin-top: -30px;
+}
+#middle-font #place{
+    width: 300px;
+    height: 150px;
+    /* height: 300px; */
+    /* border: #000 1px solid; */
+    /* -moz-box-shadow: 0 0 5px #aaa; */
+    background: #ffffff;
+    position: absolute;
+    top: 95%;
+    left: -620%;
+    box-shadow: 0 -1px 9px 1px rgba(159,159,159,0.5);
+    display: none;
+    z-index: 99;
+}
+#middle-font #place #location{
+    width: 252px;
+    /* margin: 0 auto; */
+    margin-left: 30px;
+}
+#middle-font #place #location-text{
+    /* margin-top: -10px; */
+    height: 30px;
+    font-size: 12px;
+}
+#middle-font #place #location-btn{
+    width: 251px;
+    height: 45px;
+    background: #ffffff;
+    border: 1px  #cccccc solid;
+    cursor: pointer;
+}
+#middle-font #place #location-input{
+    width: 200px;
+    height: 35px;
+    float: left;
+    border: 1px  #cccccc solid;
+    /* background: #ffffff;
+    border: 1px  #cccccc solid;
+    cursor: pointer; */
+}
+#middle-font #place #location-font{
+    /* font-size: 12px; */
+    width: 45px;
+    height: 37px;
+    background: #ffffff;
+    border: 1px  #cccccc solid;
+    cursor: pointer;
+    float: left;
+}
+#middle-font #place #location-font .search{
+    /* font-size: 14px; */
+    text-align: center;
+    line-height: 35px;
+}
+#middle-font .triangle:hover #place{
+    display: block;
+}
+#middle-font #shopping{
+    width: 300px;
+    height: 250px;
+    color: #808080;
+    background: #ffffff;
+    position: absolute;
+    top: 95%;
+    left: -800%;
+    box-shadow: 0 -1px 9px 1px rgba(159,159,159,0.5);
+    display: none;
+    z-index: 99;
+} 
+#middle-font #shopping #bag-title{
+    width: 252px;
+    height: 60px;
+    margin-left: 30px;
+    font-size: 12px;
+    border-bottom:1px solid #808080;
+}
+#middle-font #bag-title #my-bag{
+    display: block;
+    float: left;
+}
+#middle-font #bag-title #products{
+    display:block;
+    float: right;
+}
+#middle-font #shopping #shopping-middle{
+    width: 252px;
+    height: 80px;
+    margin-left: 30px;
+    /* margin-top:  */
+    font-size: 12px;
+    text-align: center;
+    line-height:80px;
+    border-bottom: 1px solid #808080;
+}
+#middle-font #shopping #shopping-bottom{
+    width: 252px;
+    height: 60px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+#middle-font #shopping-bottom #btm-img{
+    width: 74px;
+    height: 74px;
+    float: left;
+}
+#middle-font #shopping-bottom #btm-text{
+    display: block;
+    float: left;
+}
+#middle-font .triangle:hover #shopping{
+    display: block;
+}
+/* menu开始 */
+#menu{
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+}
+#submenu{
+    height: 40px;
+    width: 1000px;
+    margin: 0 auto;
+    /* text-align: center; */
+    font-size: 14px;
+}
+#submenu li{
+    float: left;
+    width:60px;
+    position: relative; 
+    /* margin: 0 auto; */
+    margin-left: 150px;
+}
+#submenu a{
+    color:#808080;
+}
+/* #cosmetics #cosmetics-black{
+    height: 5px;
+    width: 30px;
+    background: #000000;
+    position: absolute;
+    bottom: -21px;
+} */
+/* hint开始 */
+#hint{
+    height: 40px;
+    /* margin-top: 15px; */
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #808080;
+    border-bottom:1px solid #ececec;
+}
+/* return 开始 */
+#return{
+    width: 1200px;
+    margin: 0 auto;
+}
+#return .arrow{
+    font-size: 30px;
+    color: #808080;
+}
+#return #return-text{
+    font-size: 13px;
+    color: #808080;
+}
+#return:hover #return-text{
+    /* cursor: pointer; */
+    text-decoration: underline;
+}
+/* 中间内容 shopping-bag 开始 */
+#shopping-bag{
+    width: 1500px;
+    height: 1200px;
+    margin: 40px auto;
+}
+#shopping-bag #shopping-title{
+    margin-top: 50px;
+    text-align: center;
+    /* padding-left: 30px; */
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+#shopping-title .title-text{
+    color: #808080;
+    margin-left: 40px;
+}
+#shopping-container{
+    width: 1332px;
+    margin: 0 auto;
+    /* height: 300px; */
+}
+#shopping-left{
+    margin-top: 50px;
+    width: 784px;
+    float: left;
+}
+#message{
+    height: 200px;
+    border-top: 3px solid #000;
+    border-bottom: 1px solid #ececec;
+}
+.message-title{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#message #check-address{
+    margin-bottom: 30px;
+}
+#check-text{
+    /* float: right; */
+    font-size: 13px;
+    margin-left: 40px;
+    margin-top: -30px;;
+}
+#message-box{
+    border-radius: 25%;
+}
+#complete{
+    color: #808080;
+    font-size: 13px;
+    text-decoration: underline;
+}
+#complete:hover{
+    text-decoration: none;
+}
+#way{
+    height: 120px;
+    border-bottom: 1px solid #ececec;
+}
+.way-title{
+    font-size: 16px;
+    margin-top: 30px;
+}
+#way #total{
+    font-size: 13px;
+    color: #808080;
+}
+#continue{
+    width: 100px;
+    height: 50px;
+    float: right;
+    margin-top: 20px;
+}
+#continue #go-on{
+    width: 100px;
+    height: 50px;
+    background: #000000;
+    color: #fff;
+    border: 1px solid #ececec;
+    cursor: pointer;
+}
+#continue  #go-on:hover{
+    background: #808080;
+}
+#shopping-right{
+    width: 429px;
+    height: 262px;
+    float: right;
+}
+#shopping-right #order-detail{
+    width: 429px;
+    height: 220px;
+    margin-top: 50px;
+    border-top:1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+#order-detail #order-title{
+    font-size: 18px;
+    margin-top: 20px;
+}
+#order-detail #order-list{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.order-container{
+    height: 20px;
+    width: 429px;
+}
+.list-detail{
+    float: left;
+}
+.order-price{
+    float: right;
+}
+#shopping-right #commodity{
+    width: 429px;
+    height: 220px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ececec;
+}
+#commodity-change{
+    height: 30px;
+}
+#commodity #change-title{
+    float: left;
+}
+#commodity #change-text a{
+    font-size: 12px;
+    color: #808080;
+    text-decoration: underline;
+    float: right;
+}
+#commodity #change-text:hover a{
+    text-decoration: none;
+}
+#commodity-photo{
+    float: left;
+}
+#commodity-detail{
+    float: left;
+}
+#commodity-name{
+    font-size: 13px;
+    color: #808080;
+}
+#commodity-price{
+    width: 200px;
+    margin-top: 20px;
+}
+#commodity-price #color{
+    height: 10px;
+    width: 10px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+#commodity-price .price-detail{
+    float: left;
+    width: 150px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+#commodity-price .price{
+    float: left;
+}
+#commodity-price .commodity-total{
+    float: right;
+}
+#gifts{
+    /* width: 784px;
+    height: 600px; */
+    margin-top: 30px;
+}
+#gift-experience{
+    font-size: 18px;
+}
+#gifts #gift-choice{
+    margin-top: 12px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+#gifts #choose a{
+    font-size: 12px;
+    color: #808080;
+    text-decoration: underline;
+}
+#gifts #choose:hover a{
+    text-decoration: none;
+}
+#question{
+    height: 240px;
+    margin-top: 10px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+#usual-question{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#question ul{
+    margin-left: 20px;
+}
+#question .question-list{
+    list-style: disc;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+#question .question-list a{
+    color: #000;
+    font-size: 13px;
+}
+.question-list:hover a{
+    text-decoration: underline;
+}
+#help #call{
+    font-size: 13px;
+}
+/* footer开始 */
+#footer{
+    width: 1500px;
+    height: 200px;
+    margin: 50px auto;
+    text-align: center;
+    border-top: 1px #ececec solid;
+    padding-top: 50px;
+}
+#footer-left{
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+#footer .footer-text{
+    font-size: 14px;
+}
+#footer-middle{
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+#footer-right{
+    width: 500px;
+    height: 100px;
+    float: right;
+}
+#footer .text-third{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+}
+#footer p{
+    margin-top: 10px;
+}
