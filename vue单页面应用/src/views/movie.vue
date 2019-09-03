@@ -46,7 +46,7 @@
             getMovie(){ 
                 this.isShow= true;
                 axios.get('https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=广州&start='+this.movieList.length+'&count=10')
-                axios.get('data/movie0.json')
+                // axios.get('data/movie0.json')
             .then((result)=>{
                 this.isShow=false;
                 this.movieList = [...this.movieList,...result.data.subjects];
