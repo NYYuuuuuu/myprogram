@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        #box {
+            width: 600px;
+            height: 330px;
+            background-image: url("img/index1.jpg");
+            background-size: 100% 100%;
+            margin-left: 350px;
+        }
+        a {
+            font-size: 20px;
+            display: inline-block;
+            margin-left: 50px;
+        }
+    </style>
+    <script src="js/jquery1.42.min.js"></script>
+    <script>
+//        window.onload=function(){
+//            var pic=document.getElementById("pic");
+//            var a1=document.getElementById("a1");
+//            var a2=document.getElementById("a2");
+//            var a3=document.getElementById("a3");
+//            var a4=document.getElementById("a4");
+//            a1.onmouseover=function(){
+//                pic.style.src="img/index1.jpg";
+//            }
+//            a1.onmouseout=function(){
+//                pic.style.src="img/index1.jpg";
+//            }
+//            a2.onmouseover=function(){
+//                pic.style.src="img/index2.jpg";
+//            }
+//            a2.onmouseout=function(){
+//                pic.style.src="img/index1.jpg";
+//            }
+//            a3.onmouseover=function(){
+//                pic.style.src="img/index3.jpg";
+//            }
+//            a3.onmouseout=function(){
+//                pic.style.src="img/index1.jpg";
+//            }
+//            a4.onmouseover=function(){
+//                pic.style.src="img/index4.jpg";
+//            }
+//            a4.onmouseout=function(){
+//                pic.style.src="img/index1.jpg";
+//            }
+//        }
+
+        $(function(){
+            var jqbox=$("#box");
+            var jqa1=$("#a1");
+            var jqa2=$("#a2");
+            var jqa3=$("#a3");
+            jqa1.mouseenter(function(){
+                jqbox.style.backgroundImage="img/index1.jpg";
+            })
+            jqa1.mouseleave(function(){
+                jqbox.style.backgroundImage="";
+            })
+            jqa2.mouseenter(function(){
+                jqbox.style.backgroundImage="img/index2.jpg";
+            })
+            jqa2.mouseleave(function(){
+                jqbox.style.backgroundImage="img/index1.jpg";
+            })
+            jqa3.mouseenter(function(){
+                jqbox.style.backgroundImage="img/index3.jpg";
+            })
+            jqa3.mouseleave(function(){
+                jqbox.style.backgroundImage="img/index1.jpg";
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="box"></div>
+<a href="" id="a1">高级定制服</a>
+<a href="" id="a2">精品</a>
+<a href="" id="a3">高级珠宝</a>
+<a href="" id="a4">腕表</a>
+<a href="" id="a5">INSIDE CHANEL</a>
+<a href="" id="a6">香水</a>
+<a href="" id="a7">彩妆</a>
+<a href="" id="a8">护肤品</a>
+</ul>
+</body>
+</html>
